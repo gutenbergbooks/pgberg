@@ -15,7 +15,7 @@ with open('gitenberg/__init__.py', 'r') as fd:
             __version__ = m.group(1)
             break
 
-setup(name='gitberg',
+setup(name='pgberg',
       version=__version__,
       description="A library and command for interacting with the GITenberg books project",
       long_description=open('README.md').read(),
@@ -51,6 +51,7 @@ setup(name='gitberg',
           'pyparsing==2.1.10',
           'rdflib==4.2.0',
           'rdflib-jsonld==0.3',
+          'mock==2.0.0',
       ],
 
       test_suite='nose.collector',
